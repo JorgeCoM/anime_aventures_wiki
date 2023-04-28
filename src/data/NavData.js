@@ -53,7 +53,7 @@ export const NavOptions = [
         color3: ' #ba1111'
       },
       path: '/effects',
-      text: 'effects',
+      text: 'Effects',
       img: './GUI/GUI_Effects_icon.webp'
     },
     {
