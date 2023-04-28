@@ -1,5 +1,5 @@
 import {createBrowserRouter} from 'react-router-dom';
-import { LayoutHome } from '../layouts';
+import { LayoutHome, LayoutAdmin } from '../layouts';
 import { HomePage, NotFoundPage, UnitsPage, ItemsPage, TraitsPage, CodesPage, EffectsPage, RelicsPage, PowerupsPage, EvolutionPage, CosmeticsPage, TierListPage, BattlerPassPage, } from '../pages';
 
 export const router = createBrowserRouter([
@@ -56,6 +56,16 @@ export const router = createBrowserRouter([
                 path: 'battle_pass',
                 element: <BattlerPassPage/>
             },
+        ]
+    },
+    {
+        path: '/config',
+        element: <LayoutAdmin/>,
+        errorElement: <NotFoundPage/>,
+        children: [
+            {
+                
+            }
         ]
     }
 ])
