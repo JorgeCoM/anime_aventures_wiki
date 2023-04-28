@@ -97,7 +97,7 @@ export const NavOptions = [
         color3: '#fdd700'
       },
       path: '/cosmetics',
-      text: 'cosmetics',
+      text: 'Cosmetics',
       img: './GUI/GUI_Blessing_icon.webp'
     },
     {
