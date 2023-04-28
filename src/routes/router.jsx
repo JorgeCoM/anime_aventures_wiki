@@ -1,11 +1,11 @@
 import {createBrowserRouter} from 'react-router-dom';
-import { LayautHome } from '../layauts';
+import { LayoutHome } from '../layouts';
 import { HomePage, NotFoundPage, UnitsPage, ItemsPage, TraitsPage, CodesPage, EffectsPage, RelicsPage, PowerupsPage, EvolutionPage, CosmeticsPage, TierListPage, BattlerPassPage, } from '../pages';
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <LayautHome/>,
+        element: <LayoutHome/>,
         errorElement: <NotFoundPage/>,
         children: [
             {

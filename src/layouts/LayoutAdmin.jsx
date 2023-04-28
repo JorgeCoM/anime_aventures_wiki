@@ -1,4 +1,4 @@
-export const LayautAdmin = () => {
+export const LayoutAdmin = () => {
   return (
     <div>LayautAdmin</div>
   )
