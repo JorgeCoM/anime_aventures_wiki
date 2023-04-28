@@ -1,0 +1,40 @@
+.box-container {
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    border: 2px solid black;
+    transition: .5s;
+    box-sizing: content-box;
+}
+
+.box-container:hover {
+    transform: scale(.95);
+    transition: .5s;
+}
+
+.box-container-shadow {
+    opacity: .6;
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    /* -webkit-mask-image: url(https://static.wikia.nocookie.net/animeadventures/images/f/fb/GUI_Characterbox_box-shadow.png/revision/latest/scale-to-width-down/130?cb=20220824204633); */
+    /* mask-image: url(https://static.wikia.nocookie.net/animeadventures/images/f/fb/GUI_Characterbox_box-shadow.png/revision/latest/scale-to-width-down/130?cb=20220824204633); */
+    filter: saturate(1.2);
+}
+
+.box-content {
+    height: 100%;
+    background: repeating-radial-gradient(#000000a8, #000000 100%);
+}
+
+/* .box-content img {
+    -webkit-mask-image: url("../../public/GUI/GUI_Units_icon.webp");
+    mask-image: url("../../public/GUI/GUI_Units_icon.webp"); 
+} */
+
+.is__active {
+    border: 2px solid black;
+}
