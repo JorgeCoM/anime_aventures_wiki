@@ -5,7 +5,7 @@ import { useState } from "react"
 export const LayoutHome = () => {
   return (
     <div className="bg-slate-700 h-screen">
-      <div className="grid h-screen p-3 gap-4 grid-cols-12">
+      <div className="grid h-screen gap-4 grid-cols-12">
         <div className="col-span-3">
           <NavMain />
         </div>
