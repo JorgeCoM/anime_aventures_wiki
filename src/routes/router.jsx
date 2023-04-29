@@ -1,70 +1,84 @@
-import {createBrowserRouter} from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import { LayoutHome, LayoutAdmin } from '../layouts';
-import { HomePage, NotFoundPage, UnitsPage, ItemsPage, TraitsPage, CodesPage, EffectsPage, RelicsPage, PowerupsPage, EvolutionPage, CosmeticsPage, TierListPage, BattlerPassPage, } from '../pages';
+import {
+    HomePage,
+    NotFoundPage,
+    UnitsPage,
+    ItemsPage,
+    TraitsPage,
+    CodesPage,
+    EffectsPage,
+    RelicsPage,
+    PowerupsPage,
+    EvolutionPage,
+    CosmeticsPage,
+    TierListPage,
+    BattlerPassPage,
+} from '../pages';
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <LayoutHome/>,
-        errorElement: <NotFoundPage/>,
+        element: <LayoutHome />,
+        errorElement: <NotFoundPage />,
         children: [
             {
                 index: true,
-                element: <HomePage/>
+                element: <HomePage />
             },
             {
                 path: 'units',
-                element: <UnitsPage/>
+                element: <UnitsPage />
             },
             {
                 path: 'items',
-                element: <ItemsPage/>
+                element: <ItemsPage />
             },
             {
                 path: 'traits',
-                element: <TraitsPage/>
+                element: <TraitsPage />
             },
             {
                 path: 'codes',
-                element: <CodesPage/>
+                element: <CodesPage />
             },
             {
                 path: 'effects',
-                element: <EffectsPage/>
+                element: <EffectsPage />
             },
             {
                 path: 'relics',
-                element: <RelicsPage/>
+                element: <RelicsPage />
             },
             {
                 path: 'powerups',
-                element: <PowerupsPage/>
+                element: <PowerupsPage />
             },
             {
                 path: 'evolution',
-                element: <EvolutionPage/>
+                element: <EvolutionPage />
             },
             {
                 path: 'cosmetics',
-                element: <CosmeticsPage/>
+                element: <CosmeticsPage />
             },
             {
                 path: 'tier_list',
-                element: <TierListPage/>
+                element: <TierListPage />
             },
             {
                 path: 'battle_pass',
-                element: <BattlerPassPage/>
+                element: <BattlerPassPage />
             },
         ]
     },
     {
         path: '/config',
-        element: <LayoutAdmin/>,
-        errorElement: <NotFoundPage/>,
+        element: <LayoutAdmin />,
+        errorElement: <NotFoundPage />,
         children: [
             {
-                
+
             }
         ]
     }

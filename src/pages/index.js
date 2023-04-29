@@ -11,3 +11,5 @@ export * from './RelicsPage'
 export * from './TierListPage'
 export * from './TraitsPage'
 export * from './UnitsPage'
+export * from './UsuarioBan'
+
