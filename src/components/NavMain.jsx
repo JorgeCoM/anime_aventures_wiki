@@ -4,7 +4,6 @@ import { NavOptions } from '../data/NavData.js'
 export const NavMain = () => {
 
   return (
-    <div>
       <div className="grid p-2 grid-cols-1 h-screen gap-2">
         {
           NavOptions.map((item) => {
@@ -12,6 +11,5 @@ export const NavMain = () => {
           })
         }
       </div>
-    </div>
   )
 }

@@ -13,3 +13,16 @@ export * from './TraitsPage'
 export * from './UnitsPage'
 export * from './UsuarioBan'
 
+export * from './admin/battle_pass/BattlePassAdmin'
+export * from './admin/codes/CodeAdmin'
+export * from './admin/cosmetics/CosmeticsAdmin'
+export * from './admin/effects/EffectsAdmin'
+export * from './admin/evolution/EvolutionAdmin'
+export * from './admin/items/ItemAdmin'
+export * from './admin/powerups/PowerupsAdmin'
+export * from './admin/relics/RelicsAdmin'
+export * from './admin/tier_list/TierListAdmin'
+export * from './admin/traits/TraitsAdmin'
+export * from './admin/units/UnitsAdmin'
+
+

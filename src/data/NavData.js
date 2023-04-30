@@ -8,7 +8,7 @@ export const NavOptions = [
     },
     path: '/config',
     text: 'Config',
-    img: 'https://img.freepik.com/iconos-gratis/engranajes_318-826519.jpg?q=10&h=200'
+    img: './GUI/2927526.webp'
   },
   {
     gradient: {
@@ -132,5 +132,68 @@ export const NavOptions = [
     path: '/battle_pass',
     text: 'Battle pass',
     img: './GUI/Ammo.webp'
+  },
+]
+
+export const navAdminData = [
+  {
+    option: 'units',
+    path: '/config/units',
+    action: [],
+  },
+  {
+    option: 'items',
+    path: '/config/items',
+    action: [],
+  },
+  {
+    option: 'traits',
+    path: '/config/traits',
+    action: []
+  },
+  {
+    option: 'code',
+    path: '/config/code',
+    action: []
+  },
+  {
+    option: 'effects',
+    path: '/config/effects',
+    action: []
+  },
+  {
+    option: 'relics',
+    path: '/config/relics',
+    action: []
+  },
+  {
+    option: 'powerup',
+    path: '/config/powerup',
+    action: []
+  },
+  {
+    option: 'evolution',
+    path: '/config/evolution',
+    action: []
+  },
+  {
+    option: 'cosmetics',
+    path: '/config/cosmetics',
+    action: []
+  },
+  {
+    option: 'tier list',
+    path: '/config/tier_list',
+    action: []
+  },
+  {
+    option: 'battle pass',
+    path: '/config/battle_pass',
+    action: []
+  },
+  {
+    option: 'user',
+    path: '',
+    action: []
   },
 ]

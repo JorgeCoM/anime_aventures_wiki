@@ -14,6 +14,17 @@ import {
     CosmeticsPage,
     TierListPage,
     BattlerPassPage,
+    ItemAdmin,
+    UnitsAdmin,
+    TraitsAdmin,
+    CodeAdmin,
+    EffectsAdmin,
+    RelicsAdmin,
+    PowerupsAdmin,
+    EvolutionAdmin,
+    CosmeticsAdmin,
+    TierListAdmin,
+    BattlePassAdmin
 } from '../pages';
 
 export const router = createBrowserRouter([
@@ -78,7 +89,49 @@ export const router = createBrowserRouter([
         errorElement: <NotFoundPage />,
         children: [
             {
-
+                index: true,
+                path: '/config/units',
+                element: <UnitsAdmin/>
+            },
+            {
+                path: '/config/items',
+                element: <ItemAdmin/>
+            },
+            {
+                path: '/config/traits',
+                element: <TraitsAdmin/>
+            },
+            {
+                path: '/config/code',
+                element: <CodeAdmin/>
+            },
+            {
+                path: '/config/effects',
+                element: <EffectsAdmin/>
+            },
+            {
+                path: '/config/relics',
+                element: <RelicsAdmin/>
+            },
+            {
+                path: '/config/powerup',
+                element: <PowerupsAdmin/>
+            },
+            {
+                path: '/config/evolution',
+                element: <EvolutionAdmin/>
+            },
+            {
+                path: '/config/cosmetics',
+                element: <CosmeticsAdmin/>
+            },
+            {
+                path: '/config/tier_list',
+                element: <TierListAdmin/>
+            },
+            {
+                path: '/config/battle_pass',
+                element: <BattlePassAdmin/>
             }
         ]
     }

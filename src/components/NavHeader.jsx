@@ -14,7 +14,7 @@ export const NavHeader = () => {
     <div className="h-14 w-screen bg-slate-800 text-white p-1 flex justify-between items-center">
       <div className="w-50 mx-2 h-full">
         <Link to={"/"}>
-          <img className="h-full" src="./Logo.webp" alt="" />
+          <img className="h-full" src={'../Logo.webp' || './Logo.webp'} alt="Logo" />
         </Link>
       </div>
       <div className="mx-1 h-full flex justify-cente items-center w-50">
