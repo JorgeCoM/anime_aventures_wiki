@@ -137,6 +137,11 @@ export const NavOptions = [
 
 export const navAdminData = [
   {
+    option: 'home',
+    path: '/config/home',
+    action: [],
+  },
+  {
     option: 'units',
     path: '/config/units',
     action: [],
@@ -193,7 +198,7 @@ export const navAdminData = [
   },
   {
     option: 'user',
-    path: '',
+    path: '/config/user',
     action: []
   },
 ]

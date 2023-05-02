@@ -14,7 +14,7 @@ export const NavItems = ({ item }) => {
         <div className="box-content rounded-md flex justify-between items-center px-2">
           <div
             style={{       
-              background: `-webkit-linear-gradient(${gradient.grade}, ${gradient.color3}, ${gradient.color2}, ${gradient.color1}`,
+              // background: `-webkit-linear-gradient(${gradient.grade}, ${gradient.color3}, ${gradient.color2}, ${gradient.color1}`,
               maskImage: `url(${img})`,
               maskRepeat: "no-repeat",
               maskSize: "contain",

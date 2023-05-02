@@ -24,7 +24,9 @@ import {
     EvolutionAdmin,
     CosmeticsAdmin,
     TierListAdmin,
-    BattlePassAdmin
+    BattlePassAdmin,
+    HomeAdmin,
+    UsersAdmin
 } from '../pages';
 
 export const router = createBrowserRouter([
@@ -90,6 +92,10 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
+                path: '/config/home',
+                element: <HomeAdmin/>
+            },
+            {
                 path: '/config/units',
                 element: <UnitsAdmin/>
             },
@@ -132,6 +138,10 @@ export const router = createBrowserRouter([
             {
                 path: '/config/battle_pass',
                 element: <BattlePassAdmin/>
+            },
+            {
+                path: '/config/user',
+                element: <UsersAdmin/>
             }
         ]
     }
