@@ -12,7 +12,7 @@ export const LayoutAdmin = () => {
         <NavAdmin/>
       </div>
 
-      <div className="col-span-9 rounded-lg bg-slate-800">
+      <div className="col-span-9 rounded-lg mr-2 mb-2 bg-slate-800">
         <Outlet />
       </div>
     </div>
