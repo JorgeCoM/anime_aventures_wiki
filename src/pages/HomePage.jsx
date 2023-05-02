@@ -7,14 +7,14 @@ export const HomePage = () => {
         <div
           className="w-full h-full shadow-lg rounded-lg shadow-slate-400 p-4">
           <div
-            className=" text-white font-bold text-center">About</div>
+            className=" text-white font text-3xl font-bold text-center">About</div>
           <div
-            className="m-2 w-[40%] inline-block float-right">
+            className="m-2 w-[40%] float-right inline-block">
             <img
               className="w-full h-full" src="./Logo.webp" alt="" />
           </div>
           <p
-            className="text-white">
+            className="text-white text-justify">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti reiciendis fugit
             inventore et deserunt necessitatibus delectus quae accusamus animi corrupti explicabo illo
             commodi ad, at natus vel sed nobis dicta. Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -23,12 +23,12 @@ export const HomePage = () => {
         </div>
       </div>
       <div
-        className="w-full  p-5">
+        className="w-full p-5">
         <div
           className="w-full shadow-lg rounded-lg shadow-slate-400 pt-1 h-full">
           <div>
             <h1
-              className=" text-center font-bold text-white">
+              className=" text-center text-3xl font-bold text-white">
               Last update
             </h1>
           </div>
