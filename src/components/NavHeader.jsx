@@ -11,7 +11,7 @@ export const NavHeader = () => {
   const { user, isAuthenticated } = useAuth0()
 
   return (
-    <div className="h-14 z-50 w-full bg-slate-800 text-white p-1 flex justify-between items-center">
+    <div className="h-14 z-50 w-full bg-slate-800 text-white flex justify-between items-center">
       <div className="w-50 mx-2 h-full">
         <Link to={"/"}>
           <img className="h-full" src={'../Logo.webp' || './Logo.webp'} alt="Logo" />

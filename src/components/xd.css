@@ -1,0 +1,21 @@
+.mask-image {
+  background-image: url('./GUI/GUI_Units_icon.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #5493fa, #20dfcd, #5493fa);
+  mix-blend-mode: multiply; /* Esta propiedad ayuda a mezclar los colores del gradiente y la imagen */
+}
+

@@ -6,9 +6,9 @@ export const NavOptions = [
       color2: ' #20dfcd',
       color3: ' #20dfcd'
     },
-    path: '/config',
-    text: 'Config',
-    img: './GUI/2927526.webp'
+    path: '/dashboard',
+    text: 'Dashboard',
+    img: './GUI/1481441.webp'
   },
   {
     gradient: {

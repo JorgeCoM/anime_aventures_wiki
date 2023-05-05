@@ -13,24 +13,25 @@ export const NavItems = ({ item }) => {
       >
         <div className="box-content rounded-md flex justify-between items-center px-2">
           <div
-            style={{       
-              // background: `-webkit-linear-gradient(${gradient.grade}, ${gradient.color3}, ${gradient.color2}, ${gradient.color1}`,
-              maskImage: `url(${img})`,
-              maskRepeat: "no-repeat",
-              maskSize: "contain",
-              backgroundClip: "padding-box",
-              maxHeight: '90%'
+            style={{
+              position: 'relative',
+              display: 'inline-block',
             }}
           >
+            <div style={{
+              position: 'absolute',
+              display: 'block',
+              top: '0',
+              left: '0',
+              width: '100%',
+              height: '100%',
+              background: `linear-gradient(${item.gradient.grade}, ${item.gradient.color1}, ${item.gradient.color2}, ${item.gradient.color3})`,
+              mixBlendMode: 'multiply'
+            }}></div>
             <img
-              className="max-h-full py-1"
+              className="w-8 py-1"
               src={img}
               alt={text}
-              style={{
-                WebkitMaskImage: `url(${img})`,
-                maskImage: `url(${img})`,
-                opacity: 0,
-              }}
             />
           </div>
 
@@ -40,4 +41,3 @@ export const NavItems = ({ item }) => {
     </NavLink>
   );
 };
-  
