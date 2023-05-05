@@ -9,10 +9,5 @@ export * from './admin/NavAdmin'
 export * from './admin/NavAdminItem'
 export * from './UserComponent'
 
-export * from './NavMain2'
-export * from './NavUserOption'
-
-
-
 
 

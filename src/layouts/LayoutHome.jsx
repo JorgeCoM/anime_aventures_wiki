@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { SiderBar, NavMain2, NavHeader } from "../components"
+import { SiderBar, NavMain, NavHeader } from "../components"
 import {useAuth0} from '@auth0/auth0-react'
 // import { UsuarioBan } from "../pages"
 
@@ -18,7 +18,7 @@ export const LayoutHome = () => {
           <NavHeader/>
         </div>
         <div className="col-span-3 overflow-x-hidden">
-          <NavMain2 />
+          <NavMain />
         </div>
 
         <div className="col-span-6 bg-slate-800 overflow-y-hidden">
