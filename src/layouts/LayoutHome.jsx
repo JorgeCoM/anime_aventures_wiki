@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { SiderBar, NavMain, NavHeader } from "../components"
+import { SiderBar, NavMain2, NavHeader } from "../components"
 import {useAuth0} from '@auth0/auth0-react'
 // import { UsuarioBan } from "../pages"
 
@@ -14,11 +14,11 @@ export const LayoutHome = () => {
   return (
     <div className="bg-slate-700 h-screen">
       <div className="grid h-screen gap-2 grid-rows-12 grid-cols-12">
-        <div className=" col-span-12 z-50">
+        <div className=" col-span-12">
           <NavHeader/>
         </div>
         <div className="col-span-3 overflow-x-hidden">
-          <NavMain />
+          <NavMain2 />
         </div>
 
         <div className="col-span-6 bg-slate-800 overflow-y-hidden">

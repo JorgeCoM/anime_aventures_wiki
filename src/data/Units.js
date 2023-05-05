@@ -15,7 +15,9 @@ export const Units =
                 },
             ],
             deployCost: [
-
+                {
+                    upgrade0: 0
+                }
             ],
             totalCost: '48,750',
             upgradeLevels: 8,

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
-export const SocialButton = ({ items, user }) => {
+export const SocialButton = ({ items }) => {
     const { socialText, color, link, icon } = items
 
     const [isHover, setisHover] = useState(false)

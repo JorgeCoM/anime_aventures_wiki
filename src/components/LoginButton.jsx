@@ -7,12 +7,12 @@ export const LoginButton = () => {
         <>
             <NavLink
                 onClick={() => loginWithRedirect()}
-                className={"mx-3 transition rounded-md hover:bg-white hover:text-black p-2 border"}>
+                className={"mx-3 transition rounded-md hover:bg-gray-200 hover:text-black p-2 border"}>
                 Sing up
             </NavLink>
             <NavLink
                 onClick={() => loginWithRedirect()}
-                className={"p-2 transition rounded-md hover:bg-white hover:text-black border"}>
+                className={"p-2 transition rounded-md hover:bg-gray-200 hover:text-black border"}>
                 Log in
             </NavLink>
         </>
