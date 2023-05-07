@@ -25,7 +25,7 @@ export const NavItems = ({ item }) => {
               left: '0',
               width: '100%',
               height: '100%',
-              background: `linear-gradient(${item.gradient.grade}, ${item.gradient.color1}, ${item.gradient.color2}, ${item.gradient.color3})`,
+              background: `linear-gradient(${item.gradient.grade}, ${item.gradient.color1}, ${item.gradient.color2}, ${item.gradient.color1})`,
               mixBlendMode: 'multiply'
             }}></div>
             <img

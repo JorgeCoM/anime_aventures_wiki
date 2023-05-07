@@ -8,6 +8,5 @@ export * from './LogOut'
 export * from './admin/NavAdmin'
 export * from './admin/NavAdminItem'
 export * from './UserComponent'
-
-
+export * from './NotifyComponent'
 
