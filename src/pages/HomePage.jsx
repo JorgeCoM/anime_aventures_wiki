@@ -1,48 +1,63 @@
+import "../assets/homePage.css";
+import { Units } from "../data/Units";
+import Card from "../components/card";
 export const HomePage = () => {
-  const arr = ["Add new units", "fix bug portal", "remove portal alien", "add dio over heaven", "remover event fabled", "add event jojos", "remove ice queen", "remove veko", "remove a tu hermana", "holaaaaaaaaaaaaaaaaaa", 'holas', "XDDDDzzzzzzzzzzzzzz"]
+  const arr = [
+    "Hero City has been overrun by Shigaruko and his crew of villains, along with an army of Nomo! But hope still remains, as some heroes have gained powerful upgrades, and new heroes have emerged! Reunite the remaining heroes and rally together to put an end to their tyranny!",
+    "New World: Hero City!",
+    "Brand new unique units to collect, upgrade, and evolve!",
+    "New Leaderboard rewards!",
+    "New Infinity Castle season and season rewards!",
+  ];
+  const pageList = Units.map((item, index) => (
+    <Card
+      firstDivClass={
+        "col-span-1 m-1 text-center border-2 border-purple-800 bg-gray-900 rounded-md"
+      }
+      secondDivClass={"m-2"}
+      parClass={"mt-2 text-xs pt-2"}
+      key={index}
+      unitName={item.name}
+      img={item.image}
+      imgClass={
+        "m-auto mt-2  w-[90%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-sm"
+      }
+      alt={"item of popular pages list"}
+    />
+  ));
   return (
-    <div className="h-full flex flex-col justify-center">
-      <div
-        className="w-full break-words pb-1 p-5">
-        <div
-          className="w-full h-full shadow-lg rounded-lg shadow-slate-400 p-4">
-          <div
-            className=" text-white font text-3xl font-bold text-center">About</div>
-          <div
-            className="m-2 w-[40%] float-right inline-block">
-            <img
-              className="w-full h-full" src="./Logo.webp" alt="" />
-          </div>
-          <p
-            className="text-white text-justify">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti reiciendis fugit
-            inventore et deserunt necessitatibus delectus quae accusamus animi corrupti explicabo illo
-            commodi ad, at natus vel sed nobis dicta. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Corrupti sunt aperiam earum, nulla ipsa culpa voluptatem distinctio voluptates facilis
-            totam neque, obcaecati dolor ratione, quaerat est odit. Eos, iure reiciendis!</p>
+    <div className="home">
+      <div className="m-5">
+        <div className="float-right pr-10 pt-6">
+          <img className="w-80" src="./Logo.webp" alt="logo" />
+        </div>
+        <div>
+          <h2 className="text-3xl w-56">
+            <span className="text-purple-400">Anime Adventures</span> is a tower
+            defense game made by Gomu.
+          </h2>
+          <p className="text-justify mt-2 text-md">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quam,
+            obcaecati qui debitis molestiae numquam tempore non nihil adipisci
+            nostrum beatae iste sed expedita laboriosam explicabo eos itaque
+            rerum quisquam.
+          </p>
         </div>
       </div>
-      <div
-        className="w-full p-5">
-        <div
-          className="w-full shadow-lg rounded-lg shadow-slate-400 pt-1 h-full">
-          <div>
-            <h1
-              className=" text-center text-3xl font-bold text-white">
-              Last update
-            </h1>
-          </div>
-          <div>
-            <ul
-              className="grid mt-4 text-center grid-cols-3">
-              {arr.map(item =>
-                <li key={item}
-                  className="col-span-1 m-2 break-words text-white">{item}
-                </li>)}
-            </ul>
-          </div>
+      <div className="m-5">
+        <div>
+          <h2 className="text-3xl text-purple-400">Popular Pages</h2>
+        </div>
+        <div className="grid grid-cols-4">{pageList}</div>
+      </div>
+      <div className="m-5">
+        <div>
+          <h2 className="text-3xl text-purple-400"> Last updates</h2>
+        </div>
+        <div>
+          <div></div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,18 +1,20 @@
-export default function Card(
- { firstDivClass,
+export default function Card({
+  firstDivClass,
   secondDivClass,
   img,
   alt,
   imgClass,
   parClass,
-  unitName
+  unitName,
 }) {
-  return (
-    <div className={firstDivClass}>
-      <div className={secondDivClass}>
-        <img src={img} alt={alt} className={imgClass} />
-        <p className={parClass}>{unitName}</p>
-      </div>
-    </div>
+  return ( 
+      <div className={firstDivClass}>
+        <div>
+          <img src={img} alt={alt} className={imgClass} />
+        </div>
+        <div className={secondDivClass}>
+          <p className={parClass}>{unitName}</p>
+        </div>
+      </div> 
   );
 }

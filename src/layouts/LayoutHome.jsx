@@ -21,7 +21,7 @@ export const LayoutHome = () => {
           <NavMain />
         </div>
 
-        <div className="col-span-6 bg-slate-800 overflow-y-hidden">
+        <div className="col-span-6 bg-slate-800 overflow-y-scroll">
           <Outlet />
         </div>
         <div className="col-span-3 mr-2 bg-slate-800">
