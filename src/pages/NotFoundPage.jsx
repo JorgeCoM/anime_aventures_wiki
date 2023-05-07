@@ -9,15 +9,15 @@ export const NotFoundPage = () => {
       <div className="flex flex-col">
         <div className="flex flex-col items-center">
           <div className="text-indigo-500 font-bold text-7xl">
-            {error.status}
+            {error.status || 'Algo salio'}
           </div>
 
           <div className="font-bold text-3xl xl:text-7xl lg:text-6xl md:text-5xl mt-10">
-            {error.statusText}
+            {error.statusText || 'pero no sabemos que'}
           </div>
 
           <div className="text-gray-400 font-medium text-sm md:text-xl lg:text-2xl mt-8">
-            {error.data}
+            {error.data || 'Si el error persiste ponerse en contacto con los administradores'}
           </div>
         </div>
 
