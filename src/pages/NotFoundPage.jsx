@@ -57,8 +57,11 @@ export const NotFoundPage = () => {
                     0">
 
               <div className="rounded-xl bg-blue-100 px-3 py-2 md:py-4">
-                <i className="mdi mdi-at mx-auto 
-                            text-indigo-800 text-2xl md:text-3xl"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 mx-auto 
+                            text-indigo-800 text-2xl md:text-3xl h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                </svg>
+
               </div>
 
               <div className="grow flex flex-col pl-5 pt-2">
@@ -69,7 +72,7 @@ export const NotFoundPage = () => {
                 <div className="font-semibold text-sm md:text-md lg:text-lg
                             text-gray-400 group-hover:text-gray-500
                             transition-all duration-200 delay-100">
-                  Quiero imformar de un error o ponerme en contacto con los administradors
+                  Contactar con un administrador
                 </div>
               </div>
 

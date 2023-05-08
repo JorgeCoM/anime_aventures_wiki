@@ -7,7 +7,6 @@ export const DarkMode = () => {
         setisDark(!isDark)
     }
 
-    console.log(isDark)
     return (
         <>
             <label className="swap ml-2 mr-2 swap-rotate">
