@@ -33,7 +33,7 @@ export const UnitsPage = () => {
       unitName={item.name}
       img={item.image}
       imgClass={
-        "m-auto mt-2  w-[90%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-sm"
+        "m-auto mt-2  w-34 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-sm"
       }
     />
   ));
@@ -49,7 +49,7 @@ export const UnitsPage = () => {
         </div>
         <div
           id="units__content"
-          className="overflow-y-scroll grid grid-cols-4 h-[290px]"
+          className="grid grid-cols-6"
         >
           {unitList}
         </div>

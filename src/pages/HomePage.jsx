@@ -15,12 +15,12 @@ export const HomePage = () => {
         "col-span-1 m-1 text-center border-2 border-purple-800 bg-gray-900 rounded-md"
       }
       secondDivClass={"m-2"}
-      parClass={"mt-2 text-xs pt-2"}
+      parClass={"text-xs"}
       key={index}
       unitName={item.name}
       img={item.image}
       imgClass={
-        "m-auto mt-2  w-[90%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-sm"
+        "m-auto mt-2 w-34 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-sm"
       }
       alt={"item of popular pages list"}
     />
@@ -48,7 +48,7 @@ export const HomePage = () => {
         <div>
           <h2 className="text-3xl text-purple-400">Popular Pages</h2>
         </div>
-        <div className="grid grid-cols-4">{pageList}</div>
+        <div className="grid grid-cols-6">{pageList}</div>
       </div>
       <div className="m-5">
         <div>

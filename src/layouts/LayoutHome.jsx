@@ -13,18 +13,18 @@ export const LayoutHome = () => {
   // console.log(user)
   return (
     <div className="bg-slate-700 h-screen">
-      <div className="grid h-screen gap-2 grid-cols-12">
+      <div className="grid h-screen grid-cols-12">
         <div className="col-span-12">
           <NavHeader/>
         </div>
-        <div className="col-span-3 overflow-x-hidden">
+        <div className="col-span-2 overflow-x-hidden">
           <NavMain />
         </div>
 
-        <div className="col-span-6 bg-slate-800 overflow-y-scroll">
+        <div className="col-span-7 bg-slate-700 overflow-y-scroll">
           <Outlet />
         </div>
-        <div className="col-span-3 mr-2 bg-slate-800">
+        <div className="col-span-3 bg-slate-700">
           <SiderBar/>
         </div>
       </div>

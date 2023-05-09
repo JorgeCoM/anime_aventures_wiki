@@ -15,8 +15,8 @@ export const UserComponent = ({ user }) => {
         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-600 rounded-box w-52">
           <li className='mb-2 hover:bg-gray-500'>
             <a className="text-white justify-between">
-              {user.name}
-              <span className="badge">New</span>
+              {user.name} {user.email}
+              {/* <span className="badge">New</span> */}
             </a>
           </li>
           <li><a className="btn mb-2 capitalize text-white btn-outline">Settings</a></li>

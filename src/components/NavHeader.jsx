@@ -2,6 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 
 import { SocialButton,UserComponent, LoginButton } from "."
 import { SocialNavData } from '../data/NavHeaderData'
+import { NavLink } from 'react-router-dom'
 
 export const NavHeader = () => {
   const { user, isAuthenticated } = useAuth0()
@@ -24,7 +25,7 @@ export const NavHeader = () => {
                 </div>
             </div>
             <div className="navbar-center">
-                <a className="btn btn-ghost normal-case text-white text-xl">Anime Aventure Wiki</a>
+                <NavLink to={"/"} className="btn btn-ghost normal-case text-white text-xl">Anime Aventure Wiki</NavLink>
             </div>
             <div className="navbar-end">
                 {isAuthenticated ? <UserComponent user={user}/> : <LoginButton/> }
