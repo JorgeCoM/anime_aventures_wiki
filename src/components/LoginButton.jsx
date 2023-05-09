@@ -12,7 +12,7 @@ export const LoginButton = () => {
             </NavLink>
             <NavLink
                 onClick={() => loginWithRedirect()}
-                className={"mx-3 capitalize btn btn-outline btn-info p-2"}>
+                className={"ml-2 capitalize btn btn-outline btn-info p-2"}>
                 Log in
             </NavLink>
         </>

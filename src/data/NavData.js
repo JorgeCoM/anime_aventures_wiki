@@ -138,7 +138,7 @@ export const NavOptions = [
 export const navAdminData = [
   {
     option: 'home',
-    path: '/dashboard/home',
+    path: '/dashboard',
     action: [],
   },
   {
