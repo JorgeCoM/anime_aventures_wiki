@@ -138,67 +138,67 @@ export const NavOptions = [
 export const navAdminData = [
   {
     option: 'home',
-    path: '/config/home',
+    path: '/dashboard/home',
     action: [],
   },
   {
     option: 'units',
-    path: '/config/units',
+    path: '/dashboard/units',
     action: [],
   },
   {
     option: 'items',
-    path: '/config/items',
+    path: '/dashboard/items',
     action: [],
   },
   {
     option: 'traits',
-    path: '/config/traits',
+    path: '/dashboard/traits',
     action: []
   },
   {
     option: 'code',
-    path: '/config/code',
+    path: '/dashboard/code',
     action: []
   },
   {
     option: 'effects',
-    path: '/config/effects',
+    path: '/dashboard/effects',
     action: []
   },
   {
     option: 'relics',
-    path: '/config/relics',
+    path: '/dashboard/relics',
     action: []
   },
   {
     option: 'powerup',
-    path: '/config/powerup',
+    path: '/dashboard/powerup',
     action: []
   },
   {
     option: 'evolution',
-    path: '/config/evolution',
+    path: '/dashboard/evolution',
     action: []
   },
   {
     option: 'cosmetics',
-    path: '/config/cosmetics',
+    path: '/dashboard/cosmetics',
     action: []
   },
   {
     option: 'tier list',
-    path: '/config/tier_list',
+    path: '/dashboard/tier_list',
     action: []
   },
   {
     option: 'battle pass',
-    path: '/config/battle_pass',
+    path: '/dashboard/battle_pass',
     action: []
   },
   {
     option: 'user',
-    path: '/config/user',
+    path: '/dashboard/user',
     action: []
   },
 ]

@@ -86,61 +86,61 @@ export const router = createBrowserRouter([
         ]
     },
     {
-        path: '/config',
+        path: '/dashboard',
         element: <LayoutAdmin />,
         errorElement: <NotFoundPage />,
         children: [
             {
                 index: true,
-                path: '/config/home',
+                path: '/dashboard/home',
                 element: <HomeAdmin/>
             },
             {
-                path: '/config/units',
+                path: '/dashboard/units',
                 element: <UnitsAdmin/>
             },
             {
-                path: '/config/items',
+                path: '/dashboard/items',
                 element: <ItemAdmin/>
             },
             {
-                path: '/config/traits',
+                path: '/dashboard/traits',
                 element: <TraitsAdmin/>
             },
             {
-                path: '/config/code',
+                path: '/dashboard/code',
                 element: <CodeAdmin/>
             },
             {
-                path: '/config/effects',
+                path: '/dashboard/effects',
                 element: <EffectsAdmin/>
             },
             {
-                path: '/config/relics',
+                path: '/dashboard/relics',
                 element: <RelicsAdmin/>
             },
             {
-                path: '/config/powerup',
+                path: '/dashboard/powerup',
                 element: <PowerupsAdmin/>
             },
             {
-                path: '/config/evolution',
+                path: '/dashboard/evolution',
                 element: <EvolutionAdmin/>
             },
             {
-                path: '/config/cosmetics',
+                path: '/dashboard/cosmetics',
                 element: <CosmeticsAdmin/>
             },
             {
-                path: '/config/tier_list',
+                path: '/dashboard/tier_list',
                 element: <TierListAdmin/>
             },
             {
-                path: '/config/battle_pass',
+                path: '/dashboard/battle_pass',
                 element: <BattlePassAdmin/>
             },
             {
-                path: '/config/user',
+                path: '/dashboard/user',
                 element: <UsersAdmin/>
             }
         ]

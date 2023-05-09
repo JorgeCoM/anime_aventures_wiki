@@ -4,7 +4,7 @@ import { NavHeader, NavAdmin } from "../components"
 export const LayoutAdmin = () => {
   return (
     <div className="bg-slate-700 h-screen">
-    <div className="grid h-screen gap-2 grid-cols-12">
+    <div className="grid h-screen grid-cols-12">
       <div className="col-span-12">
         <NavHeader/>
       </div>
@@ -12,7 +12,7 @@ export const LayoutAdmin = () => {
         <NavAdmin/>
       </div>
 
-      <div className="col-span-9 rounded-lg mr-2 mb-2 bg-slate-800">
+      <div className="col-span-9 rounded-lg bg-slate-700">
         <Outlet />
       </div>
     </div>
