@@ -36,7 +36,7 @@ export const UnitsPage = () => {
         "m-auto mt-2  w-34 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-2 rounded-sm"
       }
     />
-  ));
+  )); 
   return (
     <div className="text-white m-5 overflow-y-hidden h-full">
       <h1 className="text-2xl font-bold">Unit page</h1>
@@ -49,7 +49,7 @@ export const UnitsPage = () => {
         </div>
         <div
           id="units__content"
-          className="grid grid-cols-6"
+          className="grid grid-cols-5"
         >
           {unitList}
         </div>
