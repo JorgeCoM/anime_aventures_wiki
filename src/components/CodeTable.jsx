@@ -5,8 +5,8 @@ export const CodeTable = ({item}) => {
         <tr >
             <td>{item.name}</td>
             <td>
-                {item.rewards.map((elements, index) => {
-                return <CodeTableRewardsItems key={index} reward={elements}/>
+                {item.rewards.map(elements => {
+                return <CodeTableRewardsItems key={elements.id} reward={elements}/>
                 })}
             </td>
             <td>
