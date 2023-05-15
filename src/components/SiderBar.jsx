@@ -9,7 +9,7 @@ export const SiderBar = () => {
           <h2 className="card-title text-center">title!</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, unde quisquam accusamus nobis, iure distinctio deleniti</p>
           <div className="card-actions justify-end">
-          <button className="btn btn-ghost btn-outline text-white">Rad more</button>
+          <button className="btn btn-ghost btn-outline text-white">Read more</button>
           </div>
         </div>
       </NavLink>
@@ -18,7 +18,7 @@ export const SiderBar = () => {
           <h2 className="card-title text-center">title!</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, unde quisquam accusamus nobis, iure distinctio deleniti</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-ghost btn-outline text-white">Rad more</button>
+            <button className="btn btn-ghost btn-outline text-white">Read more</button>
           </div>
         </div>
       </NavLink>
