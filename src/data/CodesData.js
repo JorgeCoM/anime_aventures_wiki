@@ -55,12 +55,6 @@ export const CodeData = [
                 rewards: [
                     {
                         id: Math.random().toString(36).replace(/[^a-z0-9]+/g, '').substring(2, 10),
-                        icon: './Currencies/Gems.webp',
-                        prize: 250,
-                        currencieType: 'Gems',
-                    },
-                    {
-                        id: Math.random().toString(36).replace(/[^a-z0-9]+/g, '').substring(2, 10),
                         icon: './itemsImages/Summon_Ticket.webp',
                         prize: '1x',
                         currencieType: 'Summon Ticket',
