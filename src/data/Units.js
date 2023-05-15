@@ -40,6 +40,7 @@ export const Units = [
     //     }
     // },
     {
+        categoryId: 1,
         name: 'Dezu (Vigilante)',
         image: './characterImages/Dezu_29.webp',
         levelOneStats: [],
@@ -67,6 +68,7 @@ export const Units = [
         }
     },
     {
+        categoryId: 1,
         name: 'Daky (Obi)',
         image: './characterImages/Daky_(Obi).webp',
         levelOneStats: [],
@@ -94,6 +96,7 @@ export const Units = [
         }
     },
     {
+        categoryId: 1,
         name: 'Veko',
         image: './characterImages/Veko.webp',
         levelOneStats: [],
@@ -121,6 +124,7 @@ export const Units = [
         }
     },
     {
+        categoryId: 1,
         name: 'Hawk (Fierce Wings)',
         image: './characterImages/Hawk_29.webp',
         levelOneStats: [],
@@ -148,6 +152,7 @@ export const Units = [
         }
     },
     {
+        categoryId: 1,
         name: 'Endeavor (HellFlame)',
         image: './characterImages/Endeavor_(Hellflame).webp',
         levelOneStats: [],
@@ -174,5 +179,5 @@ export const Units = [
             }],
         }
     }
-    
+
 ]
