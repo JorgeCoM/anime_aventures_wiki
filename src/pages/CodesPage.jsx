@@ -16,7 +16,7 @@ export const CodesPage = () => {
           <div> <div className="inline font-bold text-md"> {title} </div>{description} </div>
         </div>
         <div>
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto rounded-box">
             <table className="table text-black bg-slate-500 w-full">
               {/* head*/}
               <thead>

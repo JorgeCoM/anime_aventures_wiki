@@ -2,7 +2,7 @@ import { CodeTableRewardsItems } from "./CodeTableRewardsItems"
 
 export const CodeTable = ({item}) => {
     return (
-        <tr >
+        <tr className="p-5">
             <td>{item.name}</td>
             <td>
                 {item.rewards.map(elements => {
@@ -13,8 +13,8 @@ export const CodeTable = ({item}) => {
                 {item.date}
             </td>
             {item.status
-                ? <td className=" bg-green-600"> active </td>
-                : <td className=" bg-red-600"> disabled </td>}
+                ? <td className="font-bold text-green-600"> active </td>
+                : <td className="font-bold text-red-600"> disabled </td>}
         </tr>
     )
 }
