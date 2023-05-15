@@ -5,19 +5,32 @@ export const CodeData = [
         table: [
             {
                 name: 'ENTERTAINMENT',
-                icon: './Currencies/Gems.webp',
-                currencieType: 'Gems',
-                prize: '500',
                 date: new Date().toLocaleTimeString(),
-                status: false
+                status: false,
+                rewards: [
+                    {
+                        icon: './Currencies/Gems.webp',
+                        prize: 500,
+                        currencieType: 'Gems',
+                    }
+                ]
             },
             {
                 name: 'HAPPYEASTER',
-                icon: './Currencies/Gems.webp',
-                currencieType: 'Gems',
-                prize: '500',
                 date: new Date().toLocaleTimeString(),
-                status: true
+                status: true,
+                rewards: [
+                    {
+                        icon: './Currencies/Gems.webp',
+                        prize: 250,
+                        currencieType: 'Gems',
+                    },
+                    {
+                        icon: './Currencies/Gems.webp',
+                        prize: 1000,
+                        currencieType: 'Gems',
+                    }
+                ]
             }
         ]
     }

@@ -1,19 +1,13 @@
+import { CodeTableRewardsItems } from "./CodeTableRewardsItems"
+
 export const CodeTable = ({item}) => {
     return (
         <tr >
             <td>{item.name}</td>
             <td>
-                <img className="inline" src={item.icon} alt="" />
-                <div
-                    className=" inline font-bold"
-                    style=
-                    {{
-                        background: 'linear-gradient(#ffffff 25%,#ffa7ff 40%,#66efff 75%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
-                    }}>
-                    {item.prize} {item.currencieType}
-                </div>
+                {item.rewards.map((elements, index) => {
+                return <CodeTableRewardsItems key={index} reward={elements}/>
+                })}
             </td>
             <td>
                 {item.date}
