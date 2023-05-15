@@ -61,7 +61,6 @@ export const UnitsPage = () => {
           id="units__content"
           className="grid grid-cols-5"
         >
-        <div id="units__content" className="grid grid-cols-5">
           {unitList}
         </div>
       </div>
