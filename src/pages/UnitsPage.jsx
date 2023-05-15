@@ -49,7 +49,7 @@ export const UnitsPage = () => {
         </div>
         <div
           id="units__content"
-          className="grid grid-cols-6"
+          className="grid grid-cols-5"
         >
           {unitList}
         </div>

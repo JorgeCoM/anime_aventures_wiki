@@ -48,7 +48,7 @@ export const HomePage = () => {
         <div>
           <h2 className="text-3xl text-purple-400">Popular Pages</h2>
         </div>
-        <div className="grid grid-cols-6">{pageList}</div>
+        <div className="grid grid-cols-5">{pageList}</div>
       </div>
       <div className="m-5">
         <div>

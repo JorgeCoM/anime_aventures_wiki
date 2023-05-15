@@ -3,30 +3,22 @@ import { NavLink } from 'react-router-dom'
 
 export const SiderBar = () => {
   return (
-    <div className='text-white p-2 grid overflow-y-auto overflow-x-hidden h-[550px] gap-2 grid-cols-1'>
-      <NavLink className='w-full duration-300 hover:opacity-70 hover:bg-gray-600 h-[250px] col-span-1'>
-        <div className='flex flex-col'>
-          <div className='w-full h-[150px]'>
-            <img className='w-full h-full' src="./Logo.webp" alt="" />
-          </div>
-          <div>
-            <p className='text-center text-3xl font-bold'>title</p>
-          </div>
-          <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, unde quisquam accusamus nobis, iure distinctio deleniti</p>
+    <div className='text-white p-2 grid overflow-hidden gap-2 grid-cols-1'>
+      <NavLink className="card h-64 bg-slate-600 text-primary-content">
+        <div className="card-body">
+          <h2 className="card-title text-center">title!</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, unde quisquam accusamus nobis, iure distinctio deleniti</p>
+          <div className="card-actions justify-end">
+          <button className="btn btn-ghost btn-outline text-white">Rad more</button>
           </div>
         </div>
       </NavLink>
-      <NavLink className='w-full duration-300 hover:opacity-70 hover:bg-gray-600 h-[250px] col-span-1'>
-        <div className='flex flex-col'>
-          <div className='w-full h-[150px]'>
-            <img className='w-full h-full' src="./Logo.webp" alt="" />
-          </div>
-          <div>
-            <p className='text-center text-3xl font-bold'>title</p>
-          </div>
-          <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, unde quisquam accusamus nobis, iure distinctio deleniti</p>
+      <NavLink className="card h-64 bg-slate-600 text-primary-content">
+        <div className="card-body">
+          <h2 className="card-title text-center">title!</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, unde quisquam accusamus nobis, iure distinctio deleniti</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-ghost btn-outline text-white">Rad more</button>
           </div>
         </div>
       </NavLink>

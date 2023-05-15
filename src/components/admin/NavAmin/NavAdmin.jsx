@@ -1,4 +1,4 @@
-import { navAdminData } from "../../data/NavData"
+import { navAdminData } from "../../../data/NavData"
 import { NavAdminItem } from "./NavAdminItem"
 
 export const NavAdmin = () => {
