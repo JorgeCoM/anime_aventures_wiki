@@ -1,3 +1,4 @@
+import { CodeTable } from "../components/CodeTable"
 import { CodeData } from "../data/CodesData"
 
 const title = CodeData.map(e => e.title)
@@ -29,28 +30,7 @@ export const CodesPage = () => {
               <tbody>
                 {/* row 1 */}
                 {tableDate.map(e => {
-                  return <tr key={e.name}>
-                    <td>{e.name}</td>
-                    <td>
-                      <img className="inline" src={e.icon} alt="" />
-                      <div
-                        className=" inline font-bold"
-                        style=
-                        {{
-                          background: 'linear-gradient(#ffffff 25%,#ffa7ff 40%,#66efff 75%)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent'
-                        }}>
-                        {e.prize} {e.currencieType}
-                      </div>
-                    </td>
-                    <td>
-                      {e.date}
-                    </td>
-                    {e.status
-                      ? <td className=" bg-green-600"> active </td>
-                      : <td className=" bg-red-600"> disabled </td>}
-                  </tr>
+                  return <CodeTable key={e.name} item={e}/>
                 })}
               </tbody>
             </table>
