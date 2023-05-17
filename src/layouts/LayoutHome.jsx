@@ -24,7 +24,7 @@ export const LayoutHome = () => {
         <div className="col-span-7 bg-slate-700 overflow-y-scroll">
           <Outlet />
         </div>
-        <div className="col-span-3 bg-slate-700">
+        <div className="col-span-3 m-2 bg-slate-700">
           <SiderBar/>
         </div>
       </div>

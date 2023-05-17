@@ -9,12 +9,13 @@ export default {
     theme: {
       extend: { 
         fontFamily: {
-          sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+          // sans: ['Inter var', ...defaultTheme.fontFamily.sans],    
         }
       },
     },
     plugins: [
-      require("daisyui")
+      require("daisyui"),
+      require("tw-elements/dist/plugin.cjs")
     ],
     daisyui: {
       styled: true,

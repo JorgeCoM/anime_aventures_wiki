@@ -17,9 +17,12 @@ export const CodesPage = () => {
         </div>
         <div>
           <div className="overflow-x-auto rounded-box">
-            <table className="table text-black bg-slate-500 w-full">
-              {/* head*/}
-              <thead>
+          <div className="flex flex-col text-white">
+      <div className=" overflow-x-auto">
+        <div className="inline-block min-w-full">
+          <div className="overflow-hidden">
+            <table className="min-w-full text-center text-sm font-light">
+              <thead className="border-b font-medium dark:border-neutral-500">
                 <tr>
                   <th>Code</th>
                   <th>Rewards</th>
@@ -28,12 +31,15 @@ export const CodesPage = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* row 1 */}
                 {tableDate.map(e => {
-                  return <CodeTable key={e.name} item={e}/>
+                  return <CodeTable key={e.name} item={e} />
                 })}
               </tbody>
             </table>
+          </div>
+        </div>
+      </div>
+    </div>
           </div>
         </div>
       </div>

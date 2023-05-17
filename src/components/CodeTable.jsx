@@ -1,20 +1,30 @@
 import { CodeTableRewardsItems } from "./CodeTableRewardsItems"
 
-export const CodeTable = ({item}) => {
+export const CodeTable = ({ item }) => {
     return (
-        <tr className="p-5">
-            <td>{item.name}</td>
-            <td>
+        <tr
+            className="border-b dark:border-neutral-500">
+            <td
+                className="whitespace-nowrap px-6 py-4 font-medium">
+                {item.name}
+            </td>
+            <td
+                className="whitespace-nowrap px-6 py-4">
                 {item.rewards.map(elements => {
-                return <CodeTableRewardsItems key={elements.id} reward={elements}/>
+                    return <CodeTableRewardsItems key={elements.id} reward={elements} />
                 })}
             </td>
-            <td>
+            <td
+                className="whitespace-nowrap px-6 py-4">
                 {item.date}
             </td>
-            {item.status
-                ? <td className="font-bold text-green-600"> active </td>
-                : <td className="font-bold text-red-600"> disabled </td>}
+            <td
+                className="whitespace-nowrap px-6 py-4">
+                {item.status
+                    ? <div className="font-bold text-green-600"> active </div>
+                    : <div className="font-bold text-red-600"> disabled </div>
+                }
+            </td>
         </tr>
     )
 }
