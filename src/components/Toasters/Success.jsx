@@ -5,7 +5,7 @@ export const SuccessToaster = ({ data }) => {
 
     const { title, type, message } = data 
 
-    const success = () => toast.success(`${title} ${type} ${message}`, {
+    const success = () => toast.success(`${title}  it has been ${type} successfully`, {
         style: {
             background: '#00FF7F',
             color: 'black'
