@@ -1,31 +1,23 @@
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, Toaster } from 'sonner'
 
-export const ErrorToaster = ({ message }) => {
-    const isDark = false
+export const ErrorToaster = ({ data }) => {
 
-    const error = (message) => toast.error(message);
+    const { title, messageError, type } = data
 
-    const ErrorDark = (message) => toast.dark(message, {
-        toastId: 'customErrorToast',
-        position: 'bottom-right',
-        className: 'dark-toast',
-        progressStyle: {
-            background: 'red'
-        },
+    const error = (messageError) => toast.error(`error to ${type} ${title}`, {
         style: {
-            color: '#d32027'
+            background: '#FF6347',
+            color: 'black'
         },
-        icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-
-
+        description: messageError
     });
 
     return (
         <>
-            {isDark ? error(message) : ErrorDark(message)}
+            <div className='hidden'>
+               {error( messageError)}
+            </div>
+            <Toaster />
         </>
     )
 }

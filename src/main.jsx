@@ -4,7 +4,8 @@ import { RouterProvider } from 'react-router-dom'
 import { Auth0Provider } from '@auth0/auth0-react'
 import { router } from './routes/router'
 
-import { ToastContainer } from 'react-toastify';
+import { Toaster } from 'sonner'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       authorizationParams={{
         redirect_uri: window.location.origin
       }}>
-        <ToastContainer />
+        <Toaster position="bottom-right" />
       <RouterProvider router={router} />
     </Auth0Provider>
 )
