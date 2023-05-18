@@ -1,12 +1,13 @@
+import { NavLink } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
 
-import { SocialButton,UserComponent, LoginButton } from "."
-import { SocialNavData } from '../data/NavHeaderData'
-import { NavLink } from 'react-router-dom'
+import { SocialNavData } from '../../../data/NavHeaderData'
+import { SocialButton } from './SocialButton'
+import { UserComponent } from './UserComponent'
+import { LoginButton } from './LoginButton'
 
 export const NavHeader = () => {
   const { user, isAuthenticated } = useAuth0()
-
     return (
         <div className="navbar bg-slate-800">
             <div className="navbar-start">

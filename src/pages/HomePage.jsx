@@ -1,6 +1,6 @@
 import "../assets/homePage.css";
 import { Units } from "../data/Units";
-import Card from "../components/card";
+import Card from "../components/CardCharacter/card";
 export const HomePage = () => {
   const arr = [
     "Hero City has been overrun by Shigaruko and his crew of villains, along with an army of Nomo! But hope still remains, as some heroes have gained powerful upgrades, and new heroes have emerged! Reunite the remaining heroes and rally together to put an end to their tyranny!",

@@ -1,5 +1,5 @@
 import { NavItems } from './NavItems'
-import { NavOptions } from '../data/NavData.js'
+import { NavOptions } from '../../data/NavData.js'
 
 export const NavMain = () => {
 

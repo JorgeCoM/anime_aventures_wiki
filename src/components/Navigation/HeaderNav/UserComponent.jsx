@@ -1,9 +1,13 @@
-import { DarkMode, LogOut, NotifyComponent, SearchComponent } from './';
+import { DarkMode } from "./DarkMode"
+import { LogOut } from "./LogOut"
+import { NotifyComponent } from "./Notify/NotifyComponent"
+import { SearchComponent } from "./Notify/SearchComponent"
+
 
 export const UserComponent = ({ user }) => {
   return (
     <>
-      <SearchComponent />
+      <SearchComponent/>
       <NotifyComponent />
       <DarkMode />
       <div className="dropdown dropdown-end dropdown-hover">

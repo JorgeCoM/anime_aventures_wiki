@@ -1,4 +1,4 @@
-import { CodeTable } from "../components/CodeTable"
+import { CodeTable } from "../components/Codes/CodeTable"
 import { CodeData } from "../data/CodesData"
 
 const title = CodeData.map(e => e.title)

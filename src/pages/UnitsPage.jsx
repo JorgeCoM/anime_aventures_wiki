@@ -1,5 +1,5 @@
-import Input from "../components/input";
-import Card from "../components/card";
+import Input from "../components/CardCharacter/input";
+import Card from "../components/CardCharacter/card";
 import { UnitsPageContent } from "../data/UnitsPageData";
 import { useEffect, useState } from "react";
 export const UnitsPage = () => {

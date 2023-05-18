@@ -1,5 +1,5 @@
-import Input from "../components/input";
-import CardTable from "../components/cardTable";
+import Input from "../components/CardCharacter/card";
+import CardTable from "../components/CardCharacter/cardTable";
 import { itemsCategoryList, itemsText } from "../data/itemsData";
 import { useEffect, useState } from "react";
 export const ItemsPage = () => {

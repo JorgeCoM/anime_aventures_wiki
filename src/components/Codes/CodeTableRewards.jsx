@@ -1,4 +1,4 @@
-import { useCode } from "../hooks/"
+import { useCode } from "../../hooks"
 
 export const CodeTableRewards = ({ reward }) => {
 

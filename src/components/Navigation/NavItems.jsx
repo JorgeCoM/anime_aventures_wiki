@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../assets/NavMain.css";
+import "../../assets/NavMain.css";
 
 export const NavItems = ({ item }) => {
   let { text, path, gradient, img } = item;
