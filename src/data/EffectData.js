@@ -5,14 +5,14 @@ export const EffectData = [
           {
             name: 'Bleed',
             content: 'This is the items tab body for Bleed.',
-            ButtonId: 'segment-item-1',
-            dataHsControlls: 'segment-1'
+            ButtonId: 'bleed-item-1',
+            dataHsControlls: 'bleed-1'
           },
           {
             name: 'Bleed Amplify',
             content: 'This is the items tab body for Bleed Amplify.',
-            ButtonId: 'segment-item-2',
-            dataHsControlls: 'segment-2'
+            ButtonId: 'bleed-item-2',
+            dataHsControlls: 'bleed-2'
           }
         ]
       },
@@ -22,14 +22,14 @@ export const EffectData = [
         {
           name: 'Burn',
           content: 'This is the second items tab body for Burn.',
-          ButtonId: 'segment-item-3',
-          dataHsControlls: 'segment-3'
+          ButtonId: 'burn-item-1',
+          dataHsControlls: 'segment-1'
         },
         {
           name: 'Burn Black',
           content: 'This is the second items tab body for Burn Black.',
-          ButtonId: 'segment-item-4',
-          dataHsControlls: 'segment-4'
+          ButtonId: 'burn-item-2',
+          dataHsControlls: 'burn-2'
         }
       ]
     }
