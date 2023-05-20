@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom'
-import { Auth0Provider } from '@auth0/auth0-react'
 import { router } from './routes/router'
 
+import { RouterProvider } from 'react-router-dom'
+import { Auth0Provider } from '@auth0/auth0-react'
+
+import 'preline'
+
 import { Toaster } from 'sonner'
-
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Auth0Provider
