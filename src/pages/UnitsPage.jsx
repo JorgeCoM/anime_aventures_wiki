@@ -1,29 +1,62 @@
 import Input from "../components/CardCharacter/input";
 import Card from "../components/CardCharacter/card";
 import { UnitsPageContent } from "../data/UnitsPageData";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 export const UnitsPage = () => {
   const [unitCategory, setUnitCategory] = useState([]);
   const [unitList, setUnitList] = useState([]);
   const [unitText, setUnitText] = useState(null);
+  const [theHover, setTheHover] = useState(() => {
+    const newArray = UnitsPageContent.unitsCategory.map(() => false);
+    return newArray;
+  });
+  const onMouseIn = (index) => {
+    setTheHover((oldData) => {
+      const newData = [...oldData];
+      newData[index] = true;
+      return newData;
+    });
+  };
+  const onMouseOut = (index) => {
+    setTheHover((oldData) => {
+      const newData = [...oldData];
+      newData[index] = false;
+      return newData;
+    });
+  };
   useEffect(() => {
     filterCategoryData();
     unitList.length <= 0 && filterItemData(0);
   }, []);
+  useEffect(() => {
+    setUnitCategory((oldData) => {
+      const newData = oldData.map((item, index) => {
+        const itemStyle = {
+          ...item.props.style,
+          backgroundColor: theHover[index] ? "#" + UnitsPageContent.unitsCategory[index].hover : null,
+        };
+        return React.cloneElement(item, { style: itemStyle });
+      });
+      return newData;
+    });
+  }, [theHover]);
   function filterCategoryData() {
     setUnitText(UnitsPageContent.unitText);
-    const unitCategoryData = UnitsPageContent.unitsCategory.map(
-      (item, index) => (
+    const unitCategoryData =  
+    UnitsPageContent.unitsCategory.map((item, index) => {
+      return (
         <Input
           type="button"
           onFunction={() => filterItemData(index)}
+          onHover={() => onMouseIn(index)}
+          onNotHover={() => onMouseOut(index)}
           value={item.name}
-          style={{ borderColor: "#" + item.color }}
+          style={{borderColor: "#" + item.color}}
           styleClass={`cursor-pointer text-xs rounded-xl border-2 col-span-1 py-2 mx-0.5 my-2 px-0.5`}
           key={index}
         />
-      )
-    );
+      );
+    })
     setUnitCategory(unitCategoryData);
   }
   function filterItemData(indexId) {
@@ -48,21 +81,16 @@ export const UnitsPage = () => {
     setUnitList(unitListData);
   }
   return (
-    <div className=" text-white m-5 overflow-y-hidden h-full">
-      <h1 className="text-2xl font-bold">Unit page</h1>
-      <div className="text-justify mx-3 mt-3 text-xs">
+    <div className="UnitsPage text-white m-5 h-full">
+      <h1 className="text-3xl font-bold mb-4">Unit page</h1>
+      <div className="text-center mb-2 text-md px-3 m-auto">
         <p className="leading-relaxed">{unitText}</p>
       </div>
-      <div className="mt-4">
-        <div id="units__options" className="grid grid-cols-6 justify-between">
-          {unitCategory}
-        </div>
-        <div
-          id="units__content"
-          className="grid grid-cols-5"
-        >
-          {unitList}
-        </div>
+      <div id="units__options" className="grid grid-cols-6 justify-between">
+        {unitCategory}
+      </div>
+      <div id="units__content" className="grid grid-cols-5 content-between">
+        {unitList}
       </div>
     </div>
   );

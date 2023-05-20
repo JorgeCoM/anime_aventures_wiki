@@ -3,11 +3,11 @@ import CardTable from "../components/CardCharacter/cardTable";
 import { itemsCategoryList, itemsText } from "../data/itemsData";
 import { useEffect, useState } from "react";
 export const ItemsPage = () => {
-  const [itemsCategoryFilter,setItemsCategoryFilter] =  useState([]);
-  const [categoryText,setCategoryText] = useState('')
+  const [itemsCategoryFilter, setItemsCategoryFilter] = useState([]);
+  const [categoryText, setCategoryText] = useState("");
   useEffect(() => {
-    itemsCategoryList[0] && filterData(itemsCategoryList[0].name)
-  },[])
+    itemsCategoryList[0] && filterData(itemsCategoryList[0].name);
+  }, []);
   const itemsCategory = itemsCategoryList.map((item, index) => (
     <Input
       styleClass="cols-span-1 cursor-pointer text-xs rounded-xl border-2 col-span-1 py-2 mx-0.5 my-2 px-0.5 border-purple-600 hover:bg-purple-800"
@@ -18,8 +18,10 @@ export const ItemsPage = () => {
     />
   ));
   function filterData(name) {
-    const [{content,text}] = itemsCategoryList.filter((item) => item.name == name); 
-    const cardData = content.map((item,index) => (
+    const [{ content, text }] = itemsCategoryList.filter(
+      (item) => item.name == name
+    );
+    const cardData = content.map((item, index) => (
       <CardTable
         firstClass={"col-span-1"}
         secondClass="bg-slate-800 w-40 rounded-md"
@@ -36,8 +38,8 @@ export const ItemsPage = () => {
         key={index}
       />
     ));
-    setCategoryText(text)
-    setItemsCategoryFilter(cardData); 
+    setCategoryText(text);
+    setItemsCategoryFilter(cardData);
   }
   return (
     <div className="text-white m-5 h-full itemsPage">
@@ -45,15 +47,11 @@ export const ItemsPage = () => {
       <div className="text-center mb-2 text-md px-3 m-auto">
         <p>{itemsText}</p>
       </div>
-      <div className="grid grid-cols-6">{itemsCategory}</div>
+      <div className="grid grid-cols-6 justify-between">{itemsCategory}</div>
       <div>
-        <div>
-          <p className="py-4 text-center text-sm px-8 m-auto">
-            {categoryText}
-          </p>
-          <div className="grid grid-cols-2 ml-12 gap-3 content-between ">
-            {itemsCategoryFilter && itemsCategoryFilter}
-          </div>
+        <p className="py-4 text-center text-sm px-8 m-auto">{categoryText}</p>
+        <div className="grid grid-cols-2 ml-12 gap-3 content-between">
+          {itemsCategoryFilter && itemsCategoryFilter}
         </div>
       </div>
     </div>

@@ -1,6 +1,8 @@
-export default function Input({onFunction,type, value, style,styleClass}) {
+export default function Input({onHover,onNotHover,onFunction,type, value, style,styleClass}) {
   return (
     <input
+    onMouseEnter={onHover}
+    onMouseLeave={onNotHover}
     onClick={onFunction}
       type={type}
       value={value}
