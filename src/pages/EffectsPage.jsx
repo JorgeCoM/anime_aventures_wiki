@@ -1,4 +1,4 @@
-import { FiltersSection } from "../components/Filters/FiltersSection"
+import { FiltersSection } from "../components"
 
 export const EffectsPage = () => {
   return (
